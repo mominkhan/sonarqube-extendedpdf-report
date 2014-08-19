@@ -1,0 +1,9 @@
+<% if @snapshot.measure('extendedpdf-data') %>
+<div class="yui-g">
+    <div class="dashbox">
+        <h3>SonarQube PDF Report</h3>
+        <h4>Get quality overview in a pdf document</h4>
+        <a href="<%= ApplicationController.root_context -%>/api/plugins/ExtendedPdfreport/getReport?resource=<%= @snapshot.project_id %>">Download</a>
+    </div>
+</div>
+<% end %>
